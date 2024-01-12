@@ -27,4 +27,10 @@ public class Programa1
 		double area = lado1 * lado2/2;
 		return area;
 	}
+	
+	//Calculamos el área de un rectangulo - Alumno2
+	public static double calcularAreaRectangulo(double base, double altura) {
+		double area = base * altura;
+		return area;
+	}
 }
