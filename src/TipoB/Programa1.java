@@ -27,6 +27,12 @@ public class Programa1
 		
 		System.out.println("El area del cilindro es de "+ calcularArea(radioCilindro, alturaCIlindro));
 
+		//Pedimos los datos del cubo
+		System.out.println("Escribe el lado del cubo: ");
+		double ladoCubo = entrada.nextInt();
+		
+		System.out.println("El area del cubo es de "+ calcularAreaCubo(ladoCubo));
+
 	}
 	
 	//Calculamos el área del triangulo
@@ -48,5 +54,12 @@ public class Programa1
 	public static double calcularAreaRectangulo(double base, double altura) {
 		double area = base * altura;
 		return area;
+	}
+	
+	//Calculamos el área del cubo - Alumno2
+	public static double calcularAreaCubo(double lado) {
+		double areaCara = lado*lado;
+		double areaCubo = areaCara*6;
+		return areaCubo;
 	}
 }
