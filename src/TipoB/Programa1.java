@@ -11,13 +11,22 @@ public class Programa1
 		
 		//Pedimos los lados del triangulo
 		System.out.println("Escribe la base del triangulo: ");
-		double base = entrada.nextInt();
+		double baseTriangulo = entrada.nextInt();
 		
 		System.out.println("Escribe la altura del triangulo: ");
-		double altura = entrada.nextInt();
+		double alturaTriangulo = entrada.nextInt();
 		
-		System.out.println("El area del triangulo es de "+ calcularArea(base, altura));
+		System.out.println("El area del triangulo es de "+ calcularArea(baseTriangulo, alturaTriangulo));
 	
+		//Pedimos los datos del cilindro
+		System.out.println("Escribe el radio del cilindro: ");
+		double radioCilindro = entrada.nextInt();
+		
+		System.out.println("Escribe la altura del cilindro: ");
+		double alturaCIlindro = entrada.nextInt();
+		
+		System.out.println("El area del cilindro es de "+ calcularArea(radioCilindro, alturaCIlindro));
+
 	}
 	
 	//Calculamos el área del triangulo
@@ -27,4 +36,12 @@ public class Programa1
 		double area = lado1 * lado2/2;
 		return area;
 	}
+	
+	//Calculamos el área del cilindro
+	public static double calcularAreaCilindro(double radio, double altura)
+	{
+		double area = 2*3.14*radio*(radio+altura);
+		return area;
+	}
+	
 }
